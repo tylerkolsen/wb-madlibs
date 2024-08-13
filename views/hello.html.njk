@@ -3,11 +3,17 @@
 {% block title %}Hello | Madlibs!{% endblock title %}
 
 {% block body %}
-  <h1>What's your name?</h1>
-  <form action="/greet">
-    <label for="name-input">Name</label>
-    <input id="name-input" type="text" name="name" />
-    <button type="submit">Say Hello</button>
-  </form>
+  <div>
+    <h1>What's your name?</h1>
+  </div>
+    <form action="/greet">
+      <div>
+        <label for="name-input">Name: </label>
+        <input id="name-input" type="text" name="name" />
+      </div>
+      <div>
+        <button type="submit">Say Hello</button>
+      </div>
+    </form>
 {% endblock %}
 

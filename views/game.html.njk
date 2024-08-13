@@ -6,11 +6,11 @@
     <form action="/madlib">
         <h2>Alright {{ hidName }}, Let's get some words for Madlibs:</h2>
         <div>
-            <label for="personName">Name of a person</label>
-            <input type="text" name="person" id="personName">
+            <label for="personName">Name of a person: </label>
+            <input type="text" name="person" id="personName" placeholder="John">
         </div>
         <div>
-            <label for="colorOption">A color</label>
+            <label for="colorOption">A color: </label>
             <select name="color" id="colorOption">
                 <option value="">--Please choose a color--</option>
                 <option value="yellow">Yellow</option>
@@ -22,12 +22,12 @@
             </select>
         </div>
         <div>
-            <label for="nounInput">A Noun</label>
-            <input type="text" name="noun" id="nounInput">
+            <label for="nounInput">A Noun: </label>
+            <input type="text" name="noun" id="nounInput" placeholder="Fridge">
         </div>
         <div>
-            <label for="adjName">An Adjective</label>
-            <input type="text" name="adj" id="adjName">
+            <label for="adjName">An Adjective: </label>
+            <input type="text" name="adj" id="adjName" placeholder="smooth">
         </div>
         <div>
             <button type="submit">Give me Madlib!</button>

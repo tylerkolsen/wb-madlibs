@@ -4,20 +4,20 @@
 
 {% block body %}
   <h1>Here's your madlib!</h1>
-
+  <div>
   {% switch randNum %}
     {% case 1 %}
-      <p>There once was a {{ color }} {{noun}} sitting in the Devmountain Lab. When
-      {{ person }} went to pick it up, it burst into flames in a totally
-      {{ adj }} way.</p>
+      <p class="madlib">There once was a <span class="added">{{ color }}</span> <span class="added">{{noun}}</span> sitting in the Devmountain Lab. When
+      <span class="added">{{ person }}</span> went to pick it up, it burst into flames in a totally
+      <span class="added">{{ adj }}</span> way.</p>
     {% case 2 %}
-      <p>The princess of {{noun}} kingdom was a stickler. One day, her butler
-      {{ person }} tripped and spilled her favorite drink, creating a {{ color }}
-      stain. She glared at {{ person }} in a fit of {{ adj }} rage</p>
+      <p class="madlib">The princess of <span class="added">{{noun}}</span> kingdom was a stickler. One day, her butler
+      <span class="added">{{ person }}</span> tripped and spilled her favorite drink, creating a <span class="added">{{ color }}</span>
+      stain. She glared at <span class="added">{{ person }}</span> in a fit of <span class="added">{{ adj }}</span> rage</p>
     {% case 3 %}
-      <p>Wowsers! The best band in town, led by {{ person }}, are playing tonight!
-      Your friend got tickets, but forgot to get yours too. {{ color }} with envy,
-      you decide to slap them like a {{ adj }} {{noun}}</p>
+      <p class="madlib">Wowsers! The best band in town, led by <span class="added">{{ person }}</span>, are playing tonight!
+      Your friend got tickets, but forgot to get yours too. <span class="added">{{ color }}</span> with envy,
+      you decide to slap them like a <span class="added">{{ adj }}</span> <span class="added">{{noun}}</span></p>
   {% endswitch %}
-  
+  </div>
 {% endblock %}

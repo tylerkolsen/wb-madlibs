@@ -4,9 +4,13 @@
 
 {% block body %}
  <h1>Nice to meet you, {{ name }}.</h1>
-    <p>You're very {{ compliment }}.</p>
+    <div>
+      <p>You're very {{ compliment }}.</p>
+    </div>
     <form action="/game">
-      <p>Would you like to play a game?</p>
+      <div>
+        <p>Would you like to play a game?</p>
+      </div>
       <div>
         <input type="radio" name="gameInput" value="yes" id="yes-input">
         <label for="yes-input">Yes</label>
