@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Play Madlibs!</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <form action="/madlib">
+        <h2>Alright {{ hidName }}, Let's get some words for Madlibs:</h2>
+        <div>
+            <label for="personName">Name of a person</label>
+            <input type="text" name="person" id="personName">
+        </div>
+        <div>
+            <label for="colorOption">A color</label>
+            <select name="color" id="colorOption">
+                <option value="">--Please choose a color--</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+        <div>
+            <label for="nounInput">A Noun</label>
+            <input type="text" name="noun" id="nounInput">
+        </div>
+        <div>
+            <label for="adjName">An Adjective</label>
+            <input type="text" name="adj" id="adjName">
+        </div>
+        <div>
+            <button type="submit">Give me Madlib!</button>
+        </div>
+    </form>
+  </body>
+
+</html>
