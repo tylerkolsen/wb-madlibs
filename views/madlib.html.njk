@@ -4,7 +4,20 @@
 
 {% block body %}
   <h1>Here's your madlib!</h1>
-  <p>There once was a {{ color }} {{noun}} sitting in the Devmountain Lab. When
-    {{ person }} went to pick it up, it burst into flames in a totally
-    {{ adj }} way.</p>
+
+  {% switch randNum %}
+    {% case 1 %}
+      <p>There once was a {{ color }} {{noun}} sitting in the Devmountain Lab. When
+      {{ person }} went to pick it up, it burst into flames in a totally
+      {{ adj }} way.</p>
+    {% case 2 %}
+      <p>The princess of {{noun}} kingdom was a stickler. One day, her butler
+      {{ person }} tripped and spilled her favorite drink, creating a {{ color }}
+      stain. She glared at {{ person }} in a fit of {{ adj }} rage</p>
+    {% case 3 %}
+      <p>Wowsers! The best band in town, led by {{ person }}, are playing tonight!
+      Your friend got tickets, but forgot to get yours too. {{ color }} with envy,
+      you decide to slap them like a {{ adj }} {{noun}}</p>
+  {% endswitch %}
+  
 {% endblock %}

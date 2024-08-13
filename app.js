@@ -72,10 +72,12 @@ app.get('/game', (req, res) => {
 // Handle the form from game and generate the Madlib
 app.get('/madlib', (req, res) => {
   const {person, color, noun, adj} = req.query
+  let randNum = Math.floor(Math.random() * 3 + 1)
   res.render('madlib.html.njk', {
     person,
     color,
     noun,
-    adj
+    adj,
+    randNum
   })
 })
