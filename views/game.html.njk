@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html.njk' %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's Play Madlibs!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
+{% block title %}Let's Play! | Madlibs!{% endblock title %}
 
-  <body>
+{% block body %}
     <form action="/madlib">
         <h2>Alright {{ hidName }}, Let's get some words for Madlibs:</h2>
         <div>
@@ -39,6 +33,4 @@
             <button type="submit">Give me Madlib!</button>
         </div>
     </form>
-  </body>
-
-</html>
+{% endblock %}

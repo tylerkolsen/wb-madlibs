@@ -38,12 +38,12 @@ const COMPLIMENTS = [
 
 // Display the homepage
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.render('index.html.njk');
 });
 
 // Display a form that asks for the user's name.
 app.get('/hello', (req, res) => {
-  res.render('hello.html');
+  res.render('hello.html.njk');
 });
 
 // Handle the form from /hello and greet the user.

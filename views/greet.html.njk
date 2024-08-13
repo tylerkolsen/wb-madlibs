@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html.njk' %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greetings | Madlibs!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
+{% block title %}Greetings | Madlibs!{% endblock title %}
 
-  <body>
-    <h1>Nice to meet you, {{ name }}.</h1>
+{% block body %}
+ <h1>Nice to meet you, {{ name }}.</h1>
     <p>You're very {{ compliment }}.</p>
     <form action="/game">
       <p>Would you like to play a game?</p>
@@ -24,6 +18,4 @@
         <button type="submit">Let's go!</button>
       </div>
     </form>
-  </body>
-
-</html>
+{% endblock %}

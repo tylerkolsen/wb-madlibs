@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html.njk' %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Here's your Madlib!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <h1>Here's your madlib!</h1>
-    <p>There once was a {{ color }} {{noun}} sitting in the Devmountain Lab. When
-      {{ person }} went to pick it up, it burst into flames in a totally
-      {{ adj }} way.</p>
-  </body>
-</html>
+{% block title %}Here's your Madlib | Madlibs!{% endblock title %}
+
+{% block body %}
+  <h1>Here's your madlib!</h1>
+  <p>There once was a {{ color }} {{noun}} sitting in the Devmountain Lab. When
+    {{ person }} went to pick it up, it burst into flames in a totally
+    {{ adj }} way.</p>
+{% endblock %}

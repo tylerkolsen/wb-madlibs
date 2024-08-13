@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html.njk' %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodbye!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
+{% block title %}Goodbye | Madlibs!{% endblock title %}
 
-  <body>
-    <h1>That's too bad, {{ hidName }}!</h1>
+{% block body %}
+<h1>That's too bad, {{ hidName }}!</h1>
     <p>You'll be missed!</p>
-    
-  </body>
-
-</html>
+{% endblock %}
